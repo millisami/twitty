@@ -1,4 +1,6 @@
 Twitty::Application.routes.draw do
+  resources :wall_posts
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
