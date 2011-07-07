@@ -6,8 +6,11 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => [:development, :test]
-gem 'mysql'
+gem 'mysql2', '~> 0.2.6'
+
 gem 'resque'
+gem "thin"
+gem "json"
 
 # Use unicorn as the web server
 # gem 'unicorn'

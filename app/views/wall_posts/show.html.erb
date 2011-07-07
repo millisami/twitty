@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Message:</b>
+  <%= @wall_post.message %>
+</p>
+
 
 <%= link_to 'Edit', edit_wall_post_path(@wall_post) %> |
 <%= link_to 'Back', wall_posts_path %>
