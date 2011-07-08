@@ -11,9 +11,11 @@ gem 'mysql2', '~> 0.2.6'
 gem 'resque'
 gem "thin"
 gem "json"
+gem "sinatra"
+gem 'twitter'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'shotgun', :group => :development
 
 # Deploy with Capistrano
 # gem 'capistrano'

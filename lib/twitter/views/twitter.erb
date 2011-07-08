@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tweets containing hashtag #<%= @hashtag %></title>
+  </head>
+  <style type="text/css" media="screen">
+    div.tweet { border: 1px solid gray;
+                height: 50px;
+                width: 600px;
+                padding: 5px;
+                margin-bottom: 10px; }
+    img.icon { float: left; padding-right: 10px; }
+    div.text { font-family: verdana, sans-serif; }
+    div.<%= @user %> { background: #F4F4FF; }
+  </style>
+  <body>
+    <% @tweets.each do |tweet| %>
+    <div class="tweet  <%= tweet.from_user %>" id="<%= tweet.id %>">
+      <img class="icon" src="<%= tweet.profile_image_url %>" />
+      <div class="text" >
+        <%= tweet.text %>
+      </div>
+    </div>
+    <% end %>
+  </body>
+</html>
